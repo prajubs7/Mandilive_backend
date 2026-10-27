@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mandilive
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  config:
+    import: optional:file:.env[.properties]
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

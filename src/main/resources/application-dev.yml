@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mandilive
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    com.mandilive: DEBUG
